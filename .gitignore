@@ -9,4 +9,6 @@ data/
 shared_data/
 *.txt
 _*/
-*.sh
+*.sh*.log
+icml25_result/figure/
+icml25_result/log/

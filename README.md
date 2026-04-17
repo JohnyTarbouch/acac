@@ -106,3 +106,35 @@ If you have any questions, please contact us at the email address below:
 
 {whiyoung.jung, sunghoon.hong, dsyoon, kanghoon.lee}@lgresearch.ai
 
+
+
+
+# My Changes:
+## Run test:
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+CUDA_VISIBLE_DEVICES=1 python scripts/acac_main.py \
+  --alg_name acac \
+  --env_name bp6 \
+  --exp_name acac_bp6_test \
+  --seed 0 \
+  --total_epi 200 \
+  --eval_freq 16 \
+  --eval_num_epi 2 \
+  --n_env 2 2>&1 | tee bp6_test.log
+
+
+## Start tmux:
+tmux attach -t acac
+
+
+## List
+tmux ls
+
+## Enter:
+tmux attach -t acac
+
+
+# Out:
+Ctrl+b
+d
