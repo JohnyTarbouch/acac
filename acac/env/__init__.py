@@ -28,6 +28,12 @@ register(
     entry_point='acac.env.overcooked_env.overcooked_MA_V1:Overcooked_MA_V1',
 )
 
+### Macro-action version with random A/B/C map per  episode
+register(
+    id='Overcooked-MA-Meta-v1',
+    entry_point='acac.env.overcooked_env.overcooked_MA_meta_V1:Overcooked_MA_Meta_V1',
+)
+
 # For Overcooked-Large Env
 ### Macro-action version
 register(

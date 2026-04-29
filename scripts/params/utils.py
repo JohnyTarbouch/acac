@@ -76,7 +76,7 @@ def get_env_params(args):
 
 
 def make_env_name(args):
-    if args.env_id.startswith('Overcooked-v1') or args.env_id.startswith('Overcooked-MA-v0') or args.env_id.startswith('Overcooked-MA-v1'):
+    if args.env_id.startswith('Overcooked-v1') or args.env_id.startswith('Overcooked-MA'):
         if args.rand_start:
             map_name = f"{args.map_type}R{args.grid_dim[0]}"
         else:
@@ -94,5 +94,4 @@ def make_env_name(args):
     else:
         raise NotImplementedError(f'No environment named {args.env_id}')
     return env_name
-
 

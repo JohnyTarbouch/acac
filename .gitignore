@@ -12,3 +12,4 @@ _*/
 *.sh*.log
 icml25_result/figure/
 icml25_result/log/
+*.log
